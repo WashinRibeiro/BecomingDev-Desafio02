@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="results.css" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+  </head>
+
+  <body onload="resultsIMC()">
+    <header>
+      <h1>Resultado do IMC</h1>
+      <p>Índice de Massa Corporal</p>
+    </header>
+
+    <main>
+      <div class="card_center">
+        <div class="imc">
+          <h2>Seu IMC:</h2>
+          <p id="imc"></p>
+
+          <button onclick="window.location.href = '../index.html';">
+            Voltar para tela principal
+          </button>
+        </div>
+
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Classificação</th>
+                <th>IMC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="abaixo-peso">
+                <td>Abaixo do Peso</td>
+                <td>Abaixo de 18,5</td>
+              </tr>
+              <tr class="peso-normal">
+                <td>Peso Normal</td>
+                <td>18,5 - 24,9</td>
+              </tr>
+              <tr class="sobrepeso">
+                <td>Sobrepeso</td>
+                <td>25 - 29,9</td>
+              </tr>
+              <tr class="obesidade-I">
+                <td>Obesidade Grau I</td>
+                <td>30 - 34,9</td>
+              </tr>
+              <tr class="obesidade-II">
+                <td>Obesidade Grau II</td>
+                <td>35 - 39,9</td>
+              </tr>
+              <tr class="obesidade-III">
+                <td>Obesidade Grau III</td>
+                <td>40 ou Maior</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="medic">
+        <img src="../assets/medico2.png" />
+        
+        <div class="text">
+            <h3>Procure um médico </h3>
+            <p>
+              Se você tem dúvidas sobre seu peso ou IMC, busque uma orientação
+              médica. Presencialmente ou de forma virtual, uma conversa com um
+              médico pode ser o primeiro passo para começar a buscar mais qualidade
+              de vida.
+            </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

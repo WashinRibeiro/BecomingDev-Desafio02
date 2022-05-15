@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/*? --------- INITIAL ---------*/
+.card_initial {
+  width: 50%;
+  height: 100%;
+  background-color: #e2e1e1;
+}
+
+.card_initial h1 {
+  color: #000000;
+  margin-top: 2rem;
+  line-height: 1;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: Koulen, cursive;
+}
+
+.card_initial .text {
+  font-family: Koulen, cursive;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.card_initial .bg_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background: url("assets/bg_video.mp4") no-repeat;
+  background-size: cover;
+}
+
+/*? --------- ACTIONS --------- */
+.actions {
+  width: 50%;
+  height: 100%;
+  background-color: #047480;
+  /* background-image: linear-gradient(to top, #AAABF4, #EDA1A2); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 1px 2px 40px rgba(2, 2, 2);
+}
+
+.actions .card_top,
+.actions .card_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions .card_top h1 {
+  color: #e2e1e1;
+  margin: 1.8rem 2rem;
+  text-align: center;
+}
+
+.actions .card_top span {
+  color: rgb(0, 0, 0);
+  margin: 0 1.2rem;
+  text-align: left;
+  font-style: italic;
+}
+
+.actions .card_input {
+  margin: 2rem 0;
+}
+
+.actions .card_input h2 {
+  color: #e2e1e1;
+  font-family: Koulen, cursive;
+  font-weight: 300;
+  margin-left: 40px;
+}
+
+.actions button {
+  font-weight: 800;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background: #e25416;
+  color: #e2e1e1;
+  margin: 0 auto;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  overflow: hidden;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+
+section {
+  border: 1.5px solid #047480;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #047480;
+}
+section p {
+  text-align: center;
+  line-height: 1.4;
+  color: #141414;
+}
+section img {
+  height: 80px;
+}
+
+/* RANGE */
+.box {
+  background-color: #fff;
+  padding: 20px 20px 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  margin: 0 auto 2.5rem auto;
+}
+
+.box .range {
+  height: 40px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.box .range input {
+  height: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.range input::-moz-range-progress {
+  height: 10px;
+  border-radius: 25px;
+  background-color: #047480;
+}
+
+.range input::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 4px solid #047480;
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+.box .value {
+  font-size: 25px;
+  font-weight: 600;
+  color: #047480;
+  width: 55px;
+  text-align: center;
+}
+
+.box span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #047480;
+  text-align: center;
+}
+
+/* TRANSITION */
+.animationInitial {
+  opacity: 0;
+  transform: translateY(-200px);
+  animation-name: animationInitial;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.animationInput {
+  opacity: 0;
+  transform: translateY(200px);
+  animation-name: animationInitial;
+  animation-duration: 1.5s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationInitial {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animationInput {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e1e1;
+}
+
+header h1 {
+  font-family: Koulen, cursive;
+  font-size: 3rem;
+  color: #000000;
+  margin-top: 1.5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+header p {
+  font-family: Koulen, cursive;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card_center {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #047480;
+}
+
+.card_center .imc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.card_center .imc h2 {
+  font-family: Koulen, cursive;
+  font-size: 2.2rem;
+}
+
+.card_center .imc p {
+  font-size: 2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.table {
+  width: 60%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+td,
+th {
+  padding: 1rem;
+}
+th {
+  background-color: #ccc;
+}
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.green {
+  background-color: #caffbf !important;
+}
+.yellow {
+  background-color: #fdffb6 !important;
+}
+.orange {
+  background-color: #ffd6a5 !important;
+}
+.red {
+  background-color: #ffadad !important;
+}
+
+button {
+  font-weight: 800;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background: #e25416;
+  color: #e2e1e1;
+  margin-top: 5rem;
+}
+
+.medic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 15rem;
+  margin: 5rem auto;
+  background-color: #047480;
+}
+
+.medic img {
+  margin: 0px 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.medic .text h3 {
+  text-align: left;
+  font-size: 1.8em;
+  color: #e2e1e1;
+  padding-top: 1em;
+}
+
+.medic .text p {
+  text-align: left;
+  padding: 2em 2em 2em 0;
+  font-size: 1.1em;
+  color: #e2e1e1;
+}
+

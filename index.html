@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <div class="card_initial animationInitial">
+        <!-- <video autoplay loop class="bg_video"> -->
+        <!-- <source src="videos/bg.webm" type="video/webm"> -->
+        <!-- <source src="assets/bg_video.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+
+        <h1 class="animationInitial">Calculadora de IMC</h1>
+        <p class="text animationInitial">Índice de Massa Corporal</p>
+
+
+        <div class="sections">
+          <section>
+            <h2>O que é IMC?</h2>
+            <p>
+              O índice de massa corporal (IMC) é uma medida internacional usada
+              para calcular se uma pessoa está no peso ideal. Trata-se de um
+              método fácil e rápido para a avaliação do nível de gordura de cada
+              pessoa, sendo, por isso, um preditor internacional de obesidade
+              adotado pela Organização Mundial da Saúde (OMS).
+            </p>
+          </section>
+          <section>
+            <h2>Como é calculado o IMC?</h2>
+            <p>
+              Para determinar o IMC, basta dividir o peso do indivíduo (massa)
+              pela sua altura ao quadrado. A massa deve ser definida em
+              quilogramas (kg) e a altura em metros (m).
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div class="actions">
+        <div class="card_top animationInput">
+          <h1>Preencha os campos abaixo para calcular seu IMC e assim conheça
+            mais o sobre seu corpo</h1>
+          <!-- <h1>Ainda não sabe qual o seu Índice de Massa Corporal (IMC)?</h1> -->
+          <!-- <span>Preencha os campos abaixo para calcular seu IMC e assim conheça
+            mais o sobre seu corpo</span
+          > -->
+        </div>
+
+        <div class="card_input animationInput">
+          <!-- height -->
+          <h2>Altura:</h2>
+          <div class="box">
+            <div class="range">
+              <input
+                type="range"
+                min="0"
+                max="200"
+                value="100"
+                steps="1"
+                id="input1"
+              />
+            </div>
+            <div class="value" id="value1">100</div>
+            <span class="suffix">cm</span>
+          </div>
+
+          <!-- weight -->
+          <h2>Peso:</h2>
+          <div class="box">
+            <div class="range">
+              <input
+                type="range"
+                min="0"
+                max="200"
+                value="100"
+                steps="1"
+                id="input2"
+              />
+            </div>
+            <div class="value" id="value2">100</div>
+            <span>kg</span>
+          </div>
+        </div>
+
+        <button class="animationInput" onclick="calculateImc()">Calcular</button>
+        <!-- <img src="assets/fita.png" /> -->
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
