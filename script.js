@@ -18,15 +18,16 @@ range_weight.oninput = function () {
 
 function calculateImc() {
 
-    var height = parseInt(range_height.value); // altura
-    var weight = parseFloat(range_weight.value); // peso
-    var valueTotal = (weight / (height ** 2)).toFixed(2); // cálculo
+    var height = parseFloat(range_height.value) / 100; // altura
+    var weight = parseFloat(range_weight.value);  // peso
+    var valueTotal = weight / (height ** 2); // cálculo
+    console.log(height, weight, valueTotal)
 
     if (height == 0 || weight == 0) {
         alert('Preencha corretamente todos os campos')
     } else {
         // Armazenando no localStorage
-        localStorage.valueImc = valueTotal;
+        localStorage.valueImc = valueTotal.toFixed(2);
         window.location.href = './results/results.html';
     }
 }

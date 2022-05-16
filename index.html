@@ -11,17 +11,12 @@
 
   <body>
     <main>
-      <div class="card_initial animationInitial">
-        <!-- <video autoplay loop class="bg_video"> -->
-        <!-- <source src="videos/bg.webm" type="video/webm"> -->
-        <!-- <source src="assets/bg_video.mp4" type="video/mp4"> -->
-        <!-- </video> -->
-
+      <div class="card_initial">
         <h1 class="animationInitial">Calculadora de IMC</h1>
         <p class="text animationInitial">Índice de Massa Corporal</p>
 
 
-        <div class="sections">
+        <div class="sections animationInitial">
           <section>
             <h2>O que é IMC?</h2>
             <p>
@@ -47,13 +42,10 @@
         <div class="card_top animationInput">
           <h1>Preencha os campos abaixo para calcular seu IMC e assim conheça
             mais o sobre seu corpo</h1>
-          <!-- <h1>Ainda não sabe qual o seu Índice de Massa Corporal (IMC)?</h1> -->
-          <!-- <span>Preencha os campos abaixo para calcular seu IMC e assim conheça
-            mais o sobre seu corpo</span
-          > -->
         </div>
 
         <div class="card_input animationInput">
+
           <!-- height -->
           <h2>Altura:</h2>
           <div class="box">
@@ -89,6 +81,7 @@
           </div>
         </div>
 
+        <p id="value"></p>
         <button class="animationInput" onclick="calculateImc()">Calcular</button>
         <!-- <img src="assets/fita.png" /> -->
       </div>
